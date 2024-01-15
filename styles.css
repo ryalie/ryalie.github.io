@@ -1,0 +1,197 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  }
+  .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .text-prompt {
+    flex: 1;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  
+  .text-prompt h2 {
+    margin-bottom: 10px;
+  }
+  
+  .photo {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .photo img {
+    max-width: 100%;
+    height: auto;
+  }
+  h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #ffffff; /* Green headings */
+    display: flex;
+  }
+  h4{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    
+  }
+  .text-section {
+    width: 50%; /* Contain text within one-third of the page */
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  .right-image {
+    position: relative;
+    top: 0;
+    right: 0;
+    max-width: 50%; /* Adjust the maximum width as needed */
+    height: auto;
+  }
+  header {
+    color: #fff;
+    padding: 20px 0;
+    background-image: url('banner2.jpg'); /* Replace 'your-image.jpg' with your JPEG file */
+    background-size: contain;
+    background-position: center;
+    height: 50px; /* Set the height according to your image */
+    color: #fff; /* Text color for the header */
+    text-align: center;
+    display: flex;
+    }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 1;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    background-image: url('banner2.jpg'); /* Replace 'your-image.jpg' with your JPEG file */
+
+  }
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    /* Add responsive styles here */
+  }
+
+
+  .trail {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #2f068e; /* Green color */
+    border-radius: 60%;
+    pointer-events: none; /* Allows mouse interaction behind the element */
+    transition: transform 0.2s ease-out, opacity 0.4s ease-out;
+  }
+
+  .menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hide the sidebar off the left side */
+    width: 180px;
+    height: 100%;
+    background-color: #444;
+    transition: left 0.3s ease;
+  }
+  nav ul {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    margin-left: 270px; /* Ensure content is pushed right when the sidebar appears */
+    padding: 20px;
+  }
+  body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+    }
+
+    section {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 1;
+    }
+    
+    nav ul li a {
+      color: #ffffff; /* Green color for links */
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+      color: #441a82; /* Lighter green on hover */
+    }
+    @keyframes fadeInTop {
+      from {
+        opacity: 0;
+        transform: translateY(-50px); /* Move the text up initially */
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0); /* Bring the text to its original position */
+      }
+    }
+    .fade-in-text {
+      opacity: 0; /* Initially hide the text */
+      animation: fadeInTop 1s ease forwards; /* Apply fade-in animation */
+      animation-delay: 0.5s; /* Optional delay for animation start */
+    }
